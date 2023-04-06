@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Conjunto de casos de verificação da validação do código de barras</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Conjunto de casos de verificação da validação do código de barras</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.ufcg.psoft.mercadofacil.controller.html">com.ufcg.psoft.mercadofacil.controller</a> &gt; ProdutoV1ControllerTests$ProdutoValidacaoCodigoDeBarras</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.513s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Quando alteramos o código de barras com dados inválidos</td>
+<td class="success">alteraCodBarroDadosInvalidos()</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Quando alteramos o código de barras com dados válidos</td>
+<td class="success">alteraCodBarroDadosValidos()</td>
+<td class="success">0.504s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>22:55:28.892 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProdutoValidacaoCodigoDeBarras]: using SpringBootContextLoader
+22:55:28.893 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.ufcg.psoft.mercadofacil.controller.ProdutoV1ControllerTests$ProdutoValidacaoCodigoDeBarras]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:55:28.893 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.ufcg.psoft.mercadofacil.controller.ProdutoV1ControllerTests$ProdutoValidacaoCodigoDeBarras]: ProdutoValidacaoCodigoDeBarras does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:55:28.899 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [ProdutoValidacaoCodigoDeBarras]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+22:55:28.900 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.ufcg.psoft.mercadofacil.MercadoFacilApplication for test class com.ufcg.psoft.mercadofacil.controller.ProdutoV1ControllerTests$ProdutoValidacaoCodigoDeBarras
+22:55:28.903 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils -- Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+22:55:28.904 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils -- Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+22:55:28.905 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [ProdutoValidacaoCodigoDeBarras]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+22:55:28.905 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [ProdutoValidacaoCodigoDeBarras], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.5)
+
+2023-04-05T22:55:29.334-03:00  INFO 28350 --- [    Test worker] c.u.p.m.c.ProdutoV1ControllerTests       : Starting ProdutoV1ControllerTests using Java 17.0.6 with PID 28350 (started by lucas in /home/lucas/Downloads/mercado-facil)
+2023-04-05T22:55:29.338-03:00  INFO 28350 --- [    Test worker] c.u.p.m.c.ProdutoV1ControllerTests       : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-04-05T22:55:30.352-03:00  INFO 28350 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-04-05T22:55:30.352-03:00  INFO 28350 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-05T22:55:30.355-03:00  INFO 28350 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-04-05T22:55:30.380-03:00  INFO 28350 --- [    Test worker] c.u.p.m.c.ProdutoV1ControllerTests       : Started ProdutoV1ControllerTests in 1.314 seconds (process running for 2.455)
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /v1/produtos/10
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;101&quot;]
+             Body = {&quot;id&quot;:10,&quot;nome&quot;:&quot;Produto Dez&quot;,&quot;preco&quot;:450.0,&quot;codigoBarra&quot;:&quot;7898357417892&quot;,&quot;fabricante&quot;:&quot;Empresa Dez&quot;}
+    Session Attrs = {}
+
+Handler:
+             Type = com.ufcg.psoft.mercadofacil.controller.ProdutoV1Controller
+           Method = com.ufcg.psoft.mercadofacil.controller.ProdutoV1Controller#atualizarProduto(Long, Produto)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;id&quot;:10,&quot;nome&quot;:&quot;Produto Dez Alterado&quot;,&quot;preco&quot;:232.2,&quot;codigoBarra&quot;:&quot;7898357417892&quot;,&quot;fabricante&quot;:&quot;Empresa Dez&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6.1</a> at 5 de abr. de 2023 22:55:31</p>
+</div>
+</div>
+</body>
+</html>

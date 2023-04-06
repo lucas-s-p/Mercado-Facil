@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Conjunto de casos de verificação da validação do código de barras" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-04-06T01:55:30" hostname="lucaspereira" time="0.517">
+  <properties/>
+  <testcase name="Quando alteramos o código de barras com dados válidos" classname="com.ufcg.psoft.mercadofacil.controller.ProdutoV1ControllerTests$ProdutoValidacaoCodigoDeBarras" time="0.504"/>
+  <testcase name="Quando alteramos o código de barras com dados inválidos" classname="com.ufcg.psoft.mercadofacil.controller.ProdutoV1ControllerTests$ProdutoValidacaoCodigoDeBarras" time="0.009"/>
+  <system-out><![CDATA[22:55:28.892 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProdutoValidacaoCodigoDeBarras]: using SpringBootContextLoader
+22:55:28.893 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.ufcg.psoft.mercadofacil.controller.ProdutoV1ControllerTests$ProdutoValidacaoCodigoDeBarras]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:55:28.893 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.ufcg.psoft.mercadofacil.controller.ProdutoV1ControllerTests$ProdutoValidacaoCodigoDeBarras]: ProdutoValidacaoCodigoDeBarras does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:55:28.899 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [ProdutoValidacaoCodigoDeBarras]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+22:55:28.900 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.ufcg.psoft.mercadofacil.MercadoFacilApplication for test class com.ufcg.psoft.mercadofacil.controller.ProdutoV1ControllerTests$ProdutoValidacaoCodigoDeBarras
+22:55:28.903 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils -- Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+22:55:28.904 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils -- Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+22:55:28.905 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [ProdutoValidacaoCodigoDeBarras]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+22:55:28.905 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [ProdutoValidacaoCodigoDeBarras], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.5)
+
+2023-04-05T22:55:29.334-03:00  INFO 28350 --- [    Test worker] c.u.p.m.c.ProdutoV1ControllerTests       : Starting ProdutoV1ControllerTests using Java 17.0.6 with PID 28350 (started by lucas in /home/lucas/Downloads/mercado-facil)
+2023-04-05T22:55:29.338-03:00  INFO 28350 --- [    Test worker] c.u.p.m.c.ProdutoV1ControllerTests       : No active profile set, falling back to 1 default profile: "default"
+2023-04-05T22:55:30.352-03:00  INFO 28350 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-04-05T22:55:30.352-03:00  INFO 28350 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-05T22:55:30.355-03:00  INFO 28350 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-04-05T22:55:30.380-03:00  INFO 28350 --- [    Test worker] c.u.p.m.c.ProdutoV1ControllerTests       : Started ProdutoV1ControllerTests in 1.314 seconds (process running for 2.455)
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /v1/produtos/10
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"101"]
+             Body = {"id":10,"nome":"Produto Dez","preco":450.0,"codigoBarra":"7898357417892","fabricante":"Empresa Dez"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.ufcg.psoft.mercadofacil.controller.ProdutoV1Controller
+           Method = com.ufcg.psoft.mercadofacil.controller.ProdutoV1Controller#atualizarProduto(Long, Produto)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":10,"nome":"Produto Dez Alterado","preco":232.2,"codigoBarra":"7898357417892","fabricante":"Empresa Dez"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
