@@ -1,0 +1,5 @@
+[engine:junit-jupiter]/[class:com.ufcg.psoft.mercadofacil.service.ProdutoAlterarServiceTests]/[method:validaCodigoDeBarrasInvalido()]
+[engine:junit-jupiter]/[class:com.ufcg.psoft.mercadofacil.service.ProdutoAlterarServiceTests]/[method:precoMaiorQueZero()]
+[engine:junit-jupiter]/[class:com.ufcg.psoft.mercadofacil.service.ProdutoAlterarServiceTests]/[method:quandoNovoNomeValido()]
+[engine:junit-jupiter]/[class:com.ufcg.psoft.mercadofacil.service.ProdutoAlterarServiceTests]/[method:precoMenorIgualAZero()]
+[engine:junit-jupiter]/[class:com.ufcg.psoft.mercadofacil.service.ProdutoAlterarServiceTests]/[method:validaCodigoDeBarrasValido()]

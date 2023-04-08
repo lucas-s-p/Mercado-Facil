@@ -6,6 +6,7 @@ import com.ufcg.psoft.mercadofacil.model.Produto;
 import com.ufcg.psoft.mercadofacil.repository.ProdutoRepository;
 import com.ufcg.psoft.mercadofacil.service.ProdutoAlterarPadraoService;
 import com.ufcg.psoft.mercadofacil.service.ProdutoAlterarService;
+import jakarta.servlet.ServletException;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -98,24 +99,18 @@ public class ProdutoV1ControllerTests {
         @DisplayName("Quando alteramos o preço menor ou igual a zero do produto com dados inválidos")
         void alteraPrecoInvalido() throws Exception {
             // Arrange
-            boolean temErro = false;
-            try {
-                prod_2.setPreco(0.00);
-                String responseJsonString = driver.perform(put("/v1/produtos/" + prod_2.getId())
-                                .contentType(MediaType.APPLICATION_JSON)
-                                .content(objectMapper.writeValueAsString(prod_2)))
-                        .andExpect(status().isOk())
-                        .andDo(print())
-                        .andReturn().getResponse().getContentAsString();
+            prod_2.setPreco(0.00);
 
-                Produto resultado = objectMapper.readValue(responseJsonString, Produto.ProdutoBuilder.class).build();
-
-            } catch (Exception e) {
-               temErro = true;
-            }
+            //Act
+            ServletException thrown = assertThrows( ServletException.class,
+                    () -> driver.perform(put("/v1/produtos/" + prod_2.getId())
+                            .contentType(MediaType.APPLICATION_JSON)
+                            .content(objectMapper.writeValueAsString(prod_2)))
+                            .andExpect(status().isBadRequest())
+            );
 
             //Assert
-            assertTrue(temErro);
+            assertTrue(thrown.getMessage().contains("Preco invalido!"));
         }
     }
 
@@ -145,23 +140,18 @@ public class ProdutoV1ControllerTests {
         @DisplayName("Quando alteramos o código de barras com dados inválidos")
         void alteraCodBarroDadosInvalidos() throws Exception {
             //Arrange
-            boolean achou_Erro = false;
-            try {
-                prod_3.setCodigoBarra("7898357417890");
-                String responseJsonString = driver.perform(put("/v1/produtos/" + prod_3.getId())
-                                .contentType(MediaType.APPLICATION_JSON)
-                                .content(objectMapper.writeValueAsString(prod_3)))
-                        .andExpect(status().isOk())
-                        .andDo(print())
-                        .andReturn().getResponse().getContentAsString();
+            prod_3.setCodigoBarra("7898357417890");
 
-                Produto resultado = objectMapper.readValue(responseJsonString, Produto.ProdutoBuilder.class).build();
-            } catch (Exception e)    {
-                achou_Erro = true;
-            }
+            //Act
+            ServletException thrown = assertThrows( ServletException.class,
+                    () -> driver.perform(put("/v1/produtos/" + prod_3.getId())
+                                    .contentType(MediaType.APPLICATION_JSON)
+                                    .content(objectMapper.writeValueAsString(prod_3)))
+                            .andExpect(status().isBadRequest())
+            );
 
             //Assert
-            assertTrue(achou_Erro);
+            assertTrue(thrown.getMessage().contains("Código de Barras Inválido!"));
         }
     }
 

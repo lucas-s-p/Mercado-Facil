@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.ufcg.psoft.mercadofacil.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.ufcg.psoft.mercadofacil.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mercado-facil.mercadofacil.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mercado-facil.mercadofacil.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mercadofacil.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mercadofacil.main.iml" />
     </modules>
   </component>

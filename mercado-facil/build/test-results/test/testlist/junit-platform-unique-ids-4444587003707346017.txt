@@ -1,5 +1,0 @@
-[engine:junit-jupiter]/[class:com.ufcg.psoft.mercadofacil.controller.ProdutoV1ControllerTests]/[nested-class:ProdutoValidacaoCodigoDeBarras]/[method:alteraCodBarroDadosValidos()]
-[engine:junit-jupiter]/[class:com.ufcg.psoft.mercadofacil.controller.ProdutoV1ControllerTests]/[nested-class:ProdutoValidacaoCodigoDeBarras]/[method:alteraCodBarroDadosInvalidos()]
-[engine:junit-jupiter]/[class:com.ufcg.psoft.mercadofacil.controller.ProdutoV1ControllerTests]/[nested-class:ProdutoValidacaoRegrasDoPreco]/[method:alteraPrecoInvalido()]
-[engine:junit-jupiter]/[class:com.ufcg.psoft.mercadofacil.controller.ProdutoV1ControllerTests]/[nested-class:ProdutoValidacaoRegrasDoPreco]/[method:alteraPrecoValido()]
-[engine:junit-jupiter]/[class:com.ufcg.psoft.mercadofacil.controller.ProdutoV1ControllerTests]/[nested-class:ProdutoValidacaoCamposObrigatorios]/[method:quandoAlteramosNomeDoProdutoValido()]
